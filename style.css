@@ -382,8 +382,23 @@ section{
 }
 .col ul li a:hover{
     color: var(--text-color);
-    transform: translateX(-12px);
+    transform: scale(1.1) ;
+    transition: .4s;
+}/*
+{
+    
+.col ul li a{
+    color: #9897a9;
+    font-size: 1.1rem;
+    display: block;
+    text-transform: capitalize;
+    transform: .4s;
 }
+.col ul li a:hover{
+    color: var(--text-color);
+    transform: translateX(-12px);
+    transition: .4s;
+}*/
 .col .social{
     width: 220px;
     display: flex;
@@ -566,6 +581,103 @@ section{
     }
 }
 */
+
+
+
+@media screen and (min-width: 1920px) {
+    .hidden-box {
+    height: 120px; 
+    visibility: hidden; 
+    }
+    .logo {
+    max-height: 3rem;
+    }
+    .nav-list {
+        font-size: 1.5rem;
+    }
+    
+    .home-text h1{
+        font-size: 6rem;
+    }
+    .home-text h2{
+        font-size: 3rem;
+    }
+    .btn{
+        font-size: 2.5rem;
+    }
+    .home-img img{
+        width: 100%;
+        height: auto;
+    }
+    .home {
+        min-height: 40vh;
+    }
+    .about-txt h1{
+        font-size: 3rem;
+    }
+    .about-txt h2{
+        font-size: 3rem;
+    }
+    .about p {
+        font-size: 1.8rem;
+    }
+    .about-img img{
+        width: 100%;
+        height: auto;
+    }
+    .about {
+        min-height: 40vh;
+    }
+    .heading h1 {
+        font-size: 2.3rem;
+    }
+    .heading h2 {
+        font-size: 3rem;
+    }
+    .menu {
+        margin-top: 7rem;
+    }
+
+    .heading {
+        margin: 0 0 6rem;
+    }
+    .menu-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(220px,auto));
+        grid-gap: 15rem;
+        align-items: center;
+    }
+    
+    .box {
+    transform: scale(1.5); 
+    transform-origin: center; 
+    }
+
+    .service {
+        margin-top: 7rem;
+    }
+
+    .heading {
+        margin: 0 0 7rem;
+    }
+    .service-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(240px,auto));
+        grid-gap: 15rem;
+        margin-top: 4rem;
+    }
+
+    .s-box {
+    margin: 0 0 7rem;
+    transform: scale(1.5); 
+    transform-origin: center; 
+    }
+
+    .footer {
+    transform: scale(1.5); 
+    transform-origin: center; 
+    }
+}
 
 
 
