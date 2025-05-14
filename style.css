@@ -676,6 +676,7 @@ section{
     .footer {
     transform: scale(1.5); 
     transform-origin: center; 
+    margin-bottom: 7rem;
     }
 }
 
