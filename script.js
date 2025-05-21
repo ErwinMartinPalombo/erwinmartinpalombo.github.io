@@ -82,7 +82,7 @@ productsList.addEventListener('click', e => {
         
         const infoProduct = {                // Diccionario conteniendo el titulo del producto (h3) y el precio (p)
             quantity: 1,
-            title: product.querySelector('h3').textContent,
+            title: product.querySelector('h2').textContent,
             price: product.querySelector('p').textContent,
         }
         
@@ -180,4 +180,11 @@ const showHTML = () => {        // Función para actualizar la visualizacion del
     // Actualiza los elementos en la página con los nuevos valores
     valorTotal.innerText = `$${total}`
     countProducts.innerText = totalOfProducts;
+
+    const cartEmpty = document.querySelector('.cart-empty');
+    if (allProducts.length == 0) {
+        cartEmpty.classList.remove('hidden');
+    } else {
+        cartEmpty.classList.add('hidden');
+    }
 }

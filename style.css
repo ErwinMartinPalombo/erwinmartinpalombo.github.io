@@ -247,7 +247,7 @@ section{
 .heading h2{
     font-size: var(--h2-font);
 }
-.menu-container{
+.container-items {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(220px,auto));
     grid-gap: 1.5rem;
@@ -257,6 +257,7 @@ section{
     position: relative;
     margin-top: 4rem;   
     height: auto;
+    max-width: 20rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -265,6 +266,7 @@ section{
     padding: 20px;
     border-radius: 0.5rem;
 }
+
 .box-img{
     width: 220px;
     height: 220px;
@@ -272,33 +274,43 @@ section{
 .box-img img{
     width: 100%;
     height: 100%;
+    border-radius: 0.5rem;
 }
-.box h2{
+.box div h2{
+    margin-top: 0.8rem;
     font-size: 1.3rem;
     color: var(--bg-color);
+    display: flex;
+    justify-content: center;
 }
-.box h3{
+.box div h3{
     color: var(--bg-color);
     font-size: 1rem;
     font-weight: 400;
     margin: 4px 0 10px;
+    display: flex;
+    justify-content: center;
 }
-.box span{
+.box div p{
     font-size: var(--p-font);
     color: var(--main-color);
     font-weight: 600;
+    display: flex;
+    justify-content: center;
 }
-.box .bx{
+.box div .bx{
     border: 0;
     background: var(--main-color);
     position: absolute;
-    right:0;
-    top: 0;
+    right: 0.2rem;
+    bottom: 0.2rem;
     font-size: 30px;
     padding: 7px 10px;
-    border-radius: 0 0.5rem 0 0.5rem;
+    border-radius: 0.5rem 0 0.5rem 0;
     cursor: pointer;
     color: #273434;
+    display: flex;
+    justify-content: center;
 }
 
 .box .bx:hover{
@@ -466,6 +478,15 @@ section{
 }
 
 @media (max-width: 1000px){ /*720*/
+    .container-cart-products {
+        background-color: #465745 !important; /* Ejemplo de cambio */
+        width: 15rem !important;
+    }
+
+    .count-products{
+    background-color:#465745 !important;
+    }
+
     header{
         padding: 10px 16px;
     }
@@ -491,6 +512,12 @@ section{
 }
 
 @media screen and (max-width: 1000px) { /*575*/
+
+    .menu-container .container-items{
+        display: grid;
+        align-items: center;
+        justify-content: center;
+    }
     .home-text{
     display: flexbox;
     flex-direction: column;
@@ -728,7 +755,7 @@ section{
     top: 50px;
     right: 0;
 
-    background-color:#273434;
+    background-color:#596d57;
     width: 400px;
     z-index: 1;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.20);
@@ -773,7 +800,7 @@ section{
 }
 
 .icon-close:hover{
-    stroke: red;
+    stroke: rgb(255, 0, 0);
     cursor: pointer;
 }
 
