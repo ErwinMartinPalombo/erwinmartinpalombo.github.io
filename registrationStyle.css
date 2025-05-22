@@ -39,7 +39,6 @@ body {
     position: relative;
     color: #ffffff;
     filter: drop-shadow(0 0 3px #000);
-    margin-top: -20px;
 }
 
 .formulario h1::after {
@@ -159,8 +158,6 @@ form .username {
     color: rgb(0, 0, 158);
 }
 
-
-
 @media screen and (max-width: 500px) {
     .formulario {
         width: 350px;
@@ -174,20 +171,3 @@ form .username {
     }
     
 }
-
-.logo {
-    width: 400px;           /* O el ancho que prefieras */
-    max-width: 90vw;        /* Para que no se pase en móviles */
-    margin: 5px auto 0 auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.logo-img {
-    width: 400px;
-    height: 220px;
-    filter: drop-shadow(0 0 3px #000);
-    
-}
-
